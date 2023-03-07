@@ -1,0 +1,10 @@
+FROM python:3.9
+
+EXPOSE 3117:3117
+
+WORKDIR /code
+
+COPY . /code/
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+
+CMD ["python", "main.py"]

@@ -1,0 +1,3 @@
+fastapi
+pupil_apriltags
+uvicorn[standard]
